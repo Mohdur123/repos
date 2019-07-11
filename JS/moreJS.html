@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>More about JS</title>
+    
+
+    <script type="text/javascript">
+
+        function check()
+        {
+            var usr = document.getElementById("usr").value;
+            var pass = document.getElementById("pass").value;
+
+            if (usr == pass) {
+                alert("SAME");
+            }
+            else
+            {
+                alert("Not SAME");
+            }
+            document.getElementById("danger").innerHTML = "Do you have a trriuble with Log in?"
+        }
+        function f1()
+        {
+            var value1 = document.getElementById("rad1");
+            var value2 = document.getElementById("rad2");
+
+
+            if (value1.checked == true) {
+
+                value1.value = "THIS TEXT MUST BE CHANGED!";
+                alert("You have select the: " + value1.value);
+            }
+            else if (value2.checked == true) {
+                alert("You have select the: " + value2.value);
+            } else {
+                alert("You have not select any button!! please select anyone to show it in the pop menue");
+            }
+
+            
+        }
+
+        function fn2() {
+            var select = document.getElementById("selectionItems");
+            alert(select.options[select.selectedIndex].value);
+        }
+
+        function fn3() {
+            //var p = document.getElementsByTagName("p");
+            var forSomeItem = document.getElementsByClassName("myColor");
+            for (var i = 0; i < forSomeItem.length; i++) {
+
+                if (i == 3) {
+                    forSomeItem[i].style.color = "red";
+                }
+                forSomeItem[i].style.textAlign = "center"
+            }
+        }
+
+        function setNewImg() {
+            document.getElementById("img1").src = "Azera.jpg" ;
+
+        }
+        function restImg() {
+            document.getElementById("img1").src = "Avalon.png"
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <input id="rad1" name="grb1" type="radio" value="First Input" /> First Input <br />
+    <input id="rad2" name="grb1" type="radio" value="Second Input" /> Second Input<br />
+    <input type="button" onclick="f1()" value="Display the TEXT" />
+
+    <br />
+    <br />
+
+    <select id="selectionItems">
+
+        <option value="mango">Mango</option>
+        <option value="orange">Orange</option>
+        <option value="apple">Apple</option>
+
+    </select>
+
+    <button id="btn" onclick="fn2()">View selected fruit</button>
+
+    <br />
+    <br />
+
+    <p class="myColor">This is paragrph</p>
+    <p class="myColor">This is paragrph</p>
+    <p class="myColor">This is paragrph</p>
+    <p>This is paragrph</p>
+    <p>This is paragrph</p>
+    <p class="myColor">This is paragrph</p>
+
+    <br />
+
+    <button id="btn3" onclick="fn3()">Change the styple for each p using TagName</button>
+
+    <br />
+    <br />
+
+    <img src="Avalon.png" id="img1" onmouseover="setNewImg()" onmouseout="restImg()" height="200" width="400"/>
+    
+
+</body>
+</html>

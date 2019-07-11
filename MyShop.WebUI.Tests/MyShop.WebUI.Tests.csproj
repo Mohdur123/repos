@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D1F0C4D2-5608-4189-836E-16EFBE9715F7}</ProjectGuid>
+    <ProjectGuid>{F9ECA8B1-12CA-4905-83B0-73DD5DD48640}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyShop.WebUI.Tests</RootNamespace>
-    <AssemblyName>MyShop.WebUI.Tests</AssemblyName>
+    <RootNamespace>Myshop.WebUI.Tests</RootNamespace>
+    <AssemblyName>Myshop.WebUI.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -99,9 +99,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyShop.WebUI\MyShop.WebUI.csproj">
-      <Project>{A1D705B5-AFEF-49A5-8EA2-38F7C00D7E7B}</Project>
-      <Name>MyShop.WebUI</Name>
+    <ProjectReference Include="..\Myshop.WebUI\Myshop.WebUI.csproj">
+      <Project>{96F39C78-326E-42FD-BB09-35B457D2A2D0}</Project>
+      <Name>Myshop.WebUI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

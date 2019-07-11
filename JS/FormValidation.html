@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script type="text/javascript">
+        function check() {
+            //var username = document.getElementById("usr");
+            //var password = document.getElementById("pass");
+
+            //if (username.value == "") {
+            //    username.style.border = "solid 3px red";
+            //    document.getElementById("usrError").style.visibility = "visible";
+            //    return false;
+            //}
+            //else if (password.value.trim().length < 5) {
+            //    password.style.border = "dashed 3px red";
+            //    document.getElementById("passError").style.visibility = "visible";
+            //    return false;
+            //} else {
+            //    return true;
+            //}
+
+            //var username = document.getElementById("usr2").value;
+            //var regx = /[d]E00-/i;
+            //if (regx.test(username)) {
+            //    alert("Your Enter a Vaild Expression");
+            //    return true;
+            //} else {
+            //    alert("Your Usernase should Include the 'E00'");
+            //    document.getElementById("usr2").style.visibility = "visible";
+            //    return false;
+            //}
+
+        }
+
+        //function add() {
+        //    var num1 = parseInt(document.getElementById("firstInput").value);
+        //    var num2 = parseInt(document.getElementById("secondInput").value);
+            
+        //    result = num1 + num2;
+
+        //    console.log(result);
+        //    document.getElementById("result").innerHTML = result;
+            
+        //}
+        var ID = 0;
+        var Interval = 0;
+        function printMessage()
+        {
+            document.getElementById("new").innerHTML = Interval;
+            Interval++;
+        }
+        function start() {
+            ID = window.setInterval(printMessage, 10);
+        }
+        function stop()
+        {
+            window.clearInterval(ID);
+        }
+
+    </script>
+</head>
+<body>
+    <!--<form onsubmit="return check()" action="Welcom.html">-->
+
+        <!--Username: <input type="text" id="usr" />
+        <br />
+        <lable id="usrError" style="visibility:hidden; color:red"> Invalid Input</lable>
+        <br />
+
+        Password: <input type="password" id="pass" />
+        <br />
+        <lable id="passError" style="visibility:hidden; color:red"> problem in length of the password!</lable>
+
+        <br />-->
+
+
+        <!--Username: <input type="text" id="usr2" />
+        <br />
+        <lable id="usrError2" style="visibility:hidden; color:red">Use Special Chr.</lable>
+        <br />
+
+        Password: <input type="password" id="pass2" />
+        <br />
+        <lable id="passError2" style="visibility:hidden; color:red"> problem in length of the password!</lable>
+
+        <br />
+        <input type="submit" value="Submit the form" />-->
+
+        <!--<input  id="firstInput" type="number" placeholder="First Number"/> 
+        <br />
+        <br />
+        <input  id="secondInput" type="number" placeholder="Second Number"/>
+        <br />
+        <br />
+
+        <input type="button" onclick="add()" value="Addition"/>
+
+        <p id="result" typeof="number"></p-->
+
+
+    <!--</form>-->
+
+    <input type="button" id="start" value="start" onclick="start()"/>
+    <br />
+    <br />
+
+    <p id="new">This text should appear for 5 seconds only</p>
+    <input type="button" id="stop" value="stop" onclick="stop()"/>
+</body>
+</html>

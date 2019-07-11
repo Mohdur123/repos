@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Review JavaScript Since 2014-2015</title>
+
+    <script type="text/javascript">
+        
+        //Comment!
+        //How to print!
+        //How to use variable
+        //JS is dynamically means the variables can be changed from int ot string...
+        //JS is lossly typed means there is no type for the a variable.
+
+
+        var number = 2;
+
+
+        // to check if it is even or odd.
+        if (number % 2 == 0) {
+            document.write("This number is even");
+
+        } else {
+            document.write("This number is odd   ");    
+        }
+
+
+        // to check if it is positive or negative.
+
+        if (number > 0) {
+            document.write("  </br >This number in positive");
+        } else if (number < 0) {
+            document.write("This number is negative");
+        } else {
+            document.write("<h1>This number is neither positive and negative</h1>");
+        }
+        // find the day of the week using switch case statement.
+
+        var day = 2;
+
+        switch (day)
+        {
+                
+            case "Monday":
+                document.write("This is Sunday");
+                break;
+            case 2:
+                document.write("This is Monday </br>");
+                break;
+            case 3:
+                document.write("This is Thursday");
+            case 4:
+                document.write("This is Wednesday");
+            case 5:
+                document.write("This is Thursday");
+            case 6:
+                document.write("This is Friday");
+            case 7:ocument.write("This is Saturday");
+            default:
+                document.write("The input you used is wrong! please select a number from 1-7");
+
+
+
+        }
+
+        // for loop
+        for (var i = 2; i <= 10; i += 2)
+        {
+            document.write(i + "</br>");
+        }
+
+        var y = 1;
+
+
+        //while loop
+        while (y <= 9)
+        {
+            document.write(y + "</br>")
+            y = y + 2;
+        }
+
+        // do while loop
+
+        var z = 1;
+        do {
+            document.write(z + "</br>")
+            z = z + 2;
+        } while (z <= 9)
+
+        if (z == y) {
+            document.write("GREAT! WE DID WELL");
+        } else {
+            document.write("IT IS NOT THE SAME");
+        }
+
+
+        // functions that add two numbers
+
+        function addition(a, b) {
+
+            return a + b;
+            
+        }
+
+        document.write("The total value is: " + addition(" Hello ",9));
+
+        // Arrays 
+
+        // there are two ways that you can use to define an array in JS.
+
+        // The first way which is recommended..
+
+        var cars = ["Genesis", "Azera", "Sonata", "Elantra", "Accent"];
+
+        // The another way which is not recommended 
+
+        var cars2 = new Array ("Avalon", "Camrey", "Corella", "Yaris");
+
+        document.write("</br >  Here is a number of Hyundai Cars: </br >");
+        for (var i = 0; i < cars.length; i++) {
+
+            document.write(cars[i] + "</br >");
+        }
+
+        document.write("</ br > Here is a number of Toyota Cars:</br >");
+
+        for (var j = 0; j < cars2.length; j++) {
+
+            document.write(cars2[j] + "</br>");
+        }
+
+        // The Objects: There are two ways to define an object 
+
+        //=============================================================================
+        // This is not reusable you can use only one type of object.
+        //var Car = {
+        //    car_brand : "Hyundai",
+        //    car_model : "Azera",
+        //    car_year : 2010,
+
+        //    printDetails: function () {
+        //        document.write("<br /> <h2>info." + this.car_brand + "<h2> </br >");
+        //    }
+        //}
+        //=============================================================================
+
+
+        function Car(car_brand, car_model, car_year) {
+            this.car_brand = car_brand;
+            this.car_model = car_model;
+            this.car_year = car_year;
+
+            this.printDetails = function() {
+                document.write("<br /> <h2>info." + this.car_brand + "<h2> </br >");
+            }
+        }
+
+        Car.FuelType = "91";
+        myCar = new Car();
+
+        myCar.car_brand = "Mercedes";
+        myCar.printDetails();
+
+
+        delete Car.FuelType;
+        myCar.FuelType = 95;
+
+        myCar.newFun = function () {
+
+            alert(document.getElementById("myPass").value);
+
+        }
+       
+
+        document.write(Car.FuelType);
+        myCar.newFun();
+        // =========> THAT WAS ONLY THE BASICS OF JS AND FOR NOW LETS MOVE ON INOT DEEPER CONCEPS ABOUT JS :) 
+    </script>
+</head>
+<body>
+    <input  id="myPass" />
+    <button onclick="myCar.newFun()">Click on me to show the value in textbox</button>
+</body>
+</html>

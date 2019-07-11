@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Practice</h2>
+
+<input class="mySpecialProperity" id="firstname" name="firstname" type="text" readonly="true" value="Mohammed" />
+@Html.TextBox("firstname", "Mohammed", new { @class = "mySpecialProperity", @readonly = "true" })
+
+<input type="button" value="appear the hiddent textbox" onclick="change()">
+
+@Html.Hidden("hidden")
+<script src="JavaScript.js"></script>

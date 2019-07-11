@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using MyShop.WebUI.Models;
+using Myshop.WebUI.Models;
 
-namespace MyShop.WebUI.Controllers
+namespace Myshop.WebUI.Controllers
 {
     [Authorize]
     public class AccountController : Controller

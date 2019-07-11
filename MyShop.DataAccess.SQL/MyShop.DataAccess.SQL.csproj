@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7BE61742-83E3-4790-9574-0514B059D4E9}</ProjectGuid>
+    <ProjectGuid>{849E4E41-CC1D-4C08-BE58-3C5579D34A17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyShop.DataAccess.SQL</RootNamespace>
-    <AssemblyName>MyShop.DataAccess.SQL</AssemblyName>
+    <RootNamespace>Myshop.DataAccess.SQL</RootNamespace>
+    <AssemblyName>Myshop.DataAccess.SQL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

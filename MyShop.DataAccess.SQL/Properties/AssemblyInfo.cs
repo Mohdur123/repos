@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MyShop.DataAccess.SQL")]
+[assembly: AssemblyTitle("Myshop.DataAccess.SQL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MyShop.DataAccess.SQL")]
+[assembly: AssemblyProduct("Myshop.DataAccess.SQL")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7be61742-83e3-4790-9574-0514b059d4e9")]
+[assembly: Guid("849e4e41-cc1d-4c08-be58-3c5579d34a17")]
 
 // Version information for an assembly consists of the following four values:
 //
